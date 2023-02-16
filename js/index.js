@@ -41,7 +41,7 @@ var S = {
       if (i !== -1) {
         S.UI.simulate(decodeURI(action).substring(i + 3));
       } else {
-        S.UI.simulate('|#countdown 3||祝|龙|24岁|生日快乐|祝你|越来越美|年年18|顺利工作|和朋友|早日做邻居|打造更全的|玩具屋|和你聊天|非常愉快|浅祝话题|越来越多|认识你|很高兴|生日快乐!|#icon heart|#icon heart-empty|#icon heart');
+        S.UI.simulate('|#countdown 3||祝|龙|24岁|生日快乐|祝你|越来越美|年年18|工作顺利|早日搬家|打造|玩具屋|和你聊天|非常愉快|祝话题|越来越多|认识你|很高兴|再次|生日快乐!|#icon heart|#icon heart-empty|#icon heart');
       }
 
       S.Drawing.loop(function () {
@@ -117,7 +117,7 @@ S.Drawing = (function () {
 S.UI = (function () {
   var delay1,delay2;
   delay1 = 2000;
-  delay2 = 4000;
+  delay2 = 5000;
   var canvas = document.querySelector('.canvas'),
       interval,
       isTouch = false, //('ontouchstart' in window || navigator.msMaxTouchPoints),
